@@ -1,0 +1,6 @@
+framework module SimpleTableViewWrapper {
+  umbrella header "SimpleTableViewWrapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - SimpleTableViewWrapper (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - SimpleTableViewWrapper (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleTableViewWrapper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SimpleTableViewWrapper: 927155d00e1a67f526184ac41a688428dac1cd99
+
+PODFILE CHECKSUM: 298b916a1e610e35e178b46cf97b24017ba517aa
+
+COCOAPODS: 1.4.0
