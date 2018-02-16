@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SimpleTableViewWrapper'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SimpleTableViewWrapper.'
+  s.summary          = 'A simple Table View Wrapper to create simple Table Views'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This framework is designed to introduce an simple wrapper to allow coders to create non complex Table View.
                        DESC
 
   s.homepage         = 'https://github.com/vitorsala/SimpleTableViewWrapper'
@@ -31,12 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SimpleTableViewWrapper/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'SimpleTableViewWrapper' => ['SimpleTableViewWrapper/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Reusable', '~> 4.0.0'
 end
