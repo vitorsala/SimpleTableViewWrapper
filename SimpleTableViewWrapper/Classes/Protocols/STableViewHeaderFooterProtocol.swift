@@ -16,10 +16,3 @@ public protocol STableViewHeaderFooterProtocol: Reusable {
 }
 
 public protocol STableViewHeaderFooterNibProtocol: STableViewHeaderFooterProtocol, NibLoadable {}
-
-class Teste: STableViewHeaderFooterNibProtocol {
-    static var viewHeight: CGFloat { return 0 }
-    
-    func setHeaderFooter(forSection section: Int, fromTableViewHandler handler: STableViewWrapper, givenModel sectionModel: STableViewSection) {
-    }
-}
