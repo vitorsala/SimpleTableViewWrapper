@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1EEB96D172E7F9B63D9DC113 /* Pods_SimpleTableViewWrapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58356C66F05E04BBCE370E /* Pods_SimpleTableViewWrapper_Tests.framework */; };
+		3C6F006D20371B3E00D24078 /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F006C20371B3E00D24078 /* SimpleCell.swift */; };
+		3C6F007020371B9400D24078 /* SimpleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F006F20371B9400D24078 /* SimpleItem.swift */; };
+		3C6F00732037364900D24078 /* SimpleTableViewCellWithNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F00712037364900D24078 /* SimpleTableViewCellWithNib.swift */; };
+		3C6F00742037364900D24078 /* SimpleTableViewCellWithNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6F00722037364900D24078 /* SimpleTableViewCellWithNib.xib */; };
 		42E8E8D7FE6B14C3BF05F828 /* Pods_SimpleTableViewWrapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CE81CA92FF1B36AD0015DF /* Pods_SimpleTableViewWrapper_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,8 +33,12 @@
 
 /* Begin PBXFileReference section */
 		17532ABB870AA2CD827537AC /* Pods-SimpleTableViewWrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableViewWrapper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableViewWrapper_Example/Pods-SimpleTableViewWrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C6F006C20371B3E00D24078 /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		3C6F006F20371B9400D24078 /* SimpleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleItem.swift; sourceTree = "<group>"; };
+		3C6F00712037364900D24078 /* SimpleTableViewCellWithNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCellWithNib.swift; sourceTree = "<group>"; };
+		3C6F00722037364900D24078 /* SimpleTableViewCellWithNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCellWithNib.xib; sourceTree = "<group>"; };
 		4BAC4D8D2874ADFEA3D07F5F /* Pods-SimpleTableViewWrapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableViewWrapper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableViewWrapper_Tests/Pods-SimpleTableViewWrapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4E4323D0900BEB984EBF4204 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4E4323D0900BEB984EBF4204 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleTableViewWrapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTableViewWrapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +49,10 @@
 		607FACE51AFB9204008FA782 /* SimpleTableViewWrapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableViewWrapper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9BACAB95F28E46DAD98833B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9BACAB95F28E46DAD98833B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A8CE81CA92FF1B36AD0015DF /* Pods_SimpleTableViewWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTableViewWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB6A92D387E3AE5C8169344 /* Pods-SimpleTableViewWrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableViewWrapper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableViewWrapper_Example/Pods-SimpleTableViewWrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CC6226ADBF1DC124845502F6 /* SimpleTableViewWrapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleTableViewWrapper.podspec; path = ../SimpleTableViewWrapper.podspec; sourceTree = "<group>"; };
+		CC6226ADBF1DC124845502F6 /* SimpleTableViewWrapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleTableViewWrapper.podspec; path = ../SimpleTableViewWrapper.podspec; sourceTree = "<group>"; };
 		ED58356C66F05E04BBCE370E /* Pods_SimpleTableViewWrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTableViewWrapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65ACDA699F8CEA0D8A03756 /* Pods-SimpleTableViewWrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableViewWrapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableViewWrapper_Tests/Pods-SimpleTableViewWrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +77,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6F006820371AFB00D24078 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3C6F006920371B0300D24078 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3C6F006A20371B2B00D24078 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F006B20371B3000D24078 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C6F006B20371B3000D24078 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F006C20371B3E00D24078 /* SimpleCell.swift */,
+				3C6F00712037364900D24078 /* SimpleTableViewCellWithNib.swift */,
+				3C6F00722037364900D24078 /* SimpleTableViewCellWithNib.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3C6F006E20371B8400D24078 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F006F20371B9400D24078 /* SimpleItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +143,10 @@
 		607FACD21AFB9204008FA782 /* Example for SimpleTableViewWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				3C6F006E20371B8400D24078 /* Items */,
+				3C6F006A20371B2B00D24078 /* Views */,
+				3C6F006820371AFB00D24078 /* View Controllers */,
+				3C6F006920371B0300D24078 /* Storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SimpleTableViewWrapper";
@@ -107,6 +156,9 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -249,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				3C6F00742037364900D24078 /* SimpleTableViewCellWithNib.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -339,10 +392,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTableViewWrapper_Example/Pods-SimpleTableViewWrapper_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleTableViewWrapper/SimpleTableViewWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleTableViewWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,8 +430,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6F007020371B9400D24078 /* SimpleItem.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3C6F00732037364900D24078 /* SimpleTableViewCellWithNib.swift in Sources */,
+				3C6F006D20371B3E00D24078 /* SimpleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

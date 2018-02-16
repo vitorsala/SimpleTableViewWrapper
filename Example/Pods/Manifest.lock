@@ -1,7 +1,13 @@
 PODS:
   - Nimble (7.0.3)
   - Quick (1.2.0)
-  - SimpleTableViewWrapper (0.1.0)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - SimpleTableViewWrapper (0.1.0):
+    - Reusable (~> 4.0.0)
 
 DEPENDENCIES:
   - Nimble (~> 7.0.2)
@@ -15,7 +21,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SimpleTableViewWrapper: 927155d00e1a67f526184ac41a688428dac1cd99
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  SimpleTableViewWrapper: b339e9187bd5b7e1b111e182e7deab90ed8437a2
 
 PODFILE CHECKSUM: 298b916a1e610e35e178b46cf97b24017ba517aa
 

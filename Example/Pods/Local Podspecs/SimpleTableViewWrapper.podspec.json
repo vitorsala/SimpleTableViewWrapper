@@ -1,8 +1,8 @@
 {
   "name": "SimpleTableViewWrapper",
   "version": "0.1.0",
-  "summary": "A short description of SimpleTableViewWrapper.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A simple Table View Wrapper to create simple Table Views",
+  "description": "This framework is designed to introduce an simple wrapper to allow coders to create non complex Table View.",
   "homepage": "https://github.com/vitorsala/SimpleTableViewWrapper",
   "license": {
     "type": "MIT",
@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SimpleTableViewWrapper/Classes/**/*"
+  "swift_version": "4.0",
+  "source_files": "SimpleTableViewWrapper/Classes/**/*",
+  "dependencies": {
+    "Reusable": [
+      "~> 4.0.0"
+    ]
+  }
 }
