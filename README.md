@@ -22,7 +22,7 @@ pod 'SimpleTableViewWrapper'
 
 ## Author
 
-vitorsala, vitorsala@gmail.com
+Vitor Kawai Sala
 
 ## License
 
