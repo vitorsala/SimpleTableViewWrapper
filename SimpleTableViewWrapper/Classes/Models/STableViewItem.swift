@@ -18,8 +18,8 @@ open class STableViewItem {
     open var cellType: (UITableViewCell & STableViewCellProtocol).Type?
     open var isSeparatorVisible: Bool
     
-    public init<T: UITableViewCell>(cellType: T.Type,
-                                    isSeparatorVisible: Bool = true) where T: STableViewCellProtocol {
+    public init(cellType: (UITableViewCell & STableViewCellProtocol).Type? = nil,
+                isSeparatorVisible: Bool = true) {
 
         self.cellType = cellType
         self.isSeparatorVisible = isSeparatorVisible
