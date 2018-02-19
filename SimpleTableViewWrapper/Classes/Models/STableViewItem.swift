@@ -21,7 +21,7 @@ open class STableViewItem {
     // MARK: Attributes
     /// The cell's reference that will be used to display this item's properties.
     ///
-    /// If nil, an fatalError will be throw.
+    /// If nil, an 0 height empty cell will be used instead.
     open var cellType: (UITableViewCell & STableViewCellProtocol).Type?
     
     /// An Bool marking if this item's cell should render the separator line.

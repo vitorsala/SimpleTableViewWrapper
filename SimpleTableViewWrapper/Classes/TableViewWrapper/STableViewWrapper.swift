@@ -60,22 +60,36 @@ extension STableViewWrapper {
         self.register(sections: self.sections, for: tableView)
         tableView.reloadData()
     }
+}
+
+extension STableViewWrapper {
+    private func registerHeaderFooter(forSection section: STableViewSection, for tableView: UITableView) {
+        if let header = section.headerType {
+            tableView.register(headerFooter: header)
+        }
+        if let footer = section.footerType {
+            tableView.register(headerFooter: footer)
+        }
+    }
+    
+    private func register(items: [STableViewItem], for tableView: UITableView) {
+        items.forEach {
+            if let cellType = $0.cellType {
+                tableView.register(cell: cellType)
+            }
+        }
+    }
+    
+    private func registerOthersElements(for tableView: UITableView) {
+        tableView.register(cell: EmptyStubTableViewCell.self)
+    }
     
     private func register(sections: [STableViewSection], for tableView: UITableView) {
         sections.forEach {
-            if let header = $0.headerType {
-                tableView.register(headerFooter: header)
-            }
-            if let footer = $0.footerType {
-                tableView.register(headerFooter: footer)
-            }
-            
-            $0.items.forEach {
-                if let cellType = $0.cellType {
-                    tableView.register(cell: cellType)
-                }
-            }
+            self.registerHeaderFooter(forSection: $0, for: tableView)
+            self.register(items: $0.items, for: tableView)
         }
+        self.registerOthersElements(for: tableView)
     }
 }
 

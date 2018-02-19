@@ -27,9 +27,7 @@ extension UITableView {
     
     final func dequeueReusableCell(for item: STableViewItem, at indexPath: IndexPath) -> (UITableViewCell & STableViewCellProtocol) {
         
-        guard let cellType = item.cellType else {
-            fatalError("Item don't contain any cell")
-        }
+        let cellType = item.cellType ?? EmptyStubTableViewCell.self
         guard let cell = self.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath) as? (UITableViewCell & STableViewCellProtocol) else {
             
             fatalError("Cell must conform to either STableViewCellProtocol or STableViewCellNibProtocol")
