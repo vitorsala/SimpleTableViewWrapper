@@ -16,6 +16,7 @@ private enum ViewType {
 public class STableViewWrapper: NSObject {
     private weak var tableView: UITableView?
     
+    /// The sections contained by this wrapper
     public var sections: [STableViewSection]
     
     public var backgroundColor: UIColor {
@@ -34,6 +35,12 @@ public class STableViewWrapper: NSObject {
 }
 
 extension STableViewWrapper {
+    
+    /// The setup function.
+    ///
+    /// This function must be called in order to the TableView be displayed correctly
+    ///
+    /// - Parameter tableView: The **UITableView** that will be used.
     public func setup(tableView: UITableView) {
         self.tableView = tableView
         
@@ -44,6 +51,14 @@ extension STableViewWrapper {
         tableView.estimatedRowHeight = 150
         
         self.register(sections: self.sections, for: tableView)
+    }
+    
+    /// Reaload TableView's datasource, use this function instead of native's TableView to ensure
+    /// that all items's cell are correctly registered
+    public func reloadData() {
+        guard let tableView = self.tableView else { return }
+        self.register(sections: self.sections, for: tableView)
+        tableView.reloadData()
     }
     
     private func register(sections: [STableViewSection], for tableView: UITableView) {
