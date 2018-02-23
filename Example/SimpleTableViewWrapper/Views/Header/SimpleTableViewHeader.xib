@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SimpleTableViewHeader" customModule="SimpleTableViewWrapper_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b1-8X-I6D">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEG-xP-KdO">
+                            <rect key="frame" x="16" y="16" width="343" height="26"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.91372549020000005" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.36470588240000001" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tEG-xP-KdO" secondAttribute="bottom" constant="8" id="ESz-5V-aiz"/>
+                        <constraint firstItem="tEG-xP-KdO" firstAttribute="leading" secondItem="3b1-8X-I6D" secondAttribute="leading" constant="16" id="XbH-BM-DfI"/>
+                        <constraint firstAttribute="trailing" secondItem="tEG-xP-KdO" secondAttribute="trailing" constant="16" id="bnI-MP-L2d"/>
+                        <constraint firstItem="tEG-xP-KdO" firstAttribute="top" secondItem="3b1-8X-I6D" secondAttribute="top" constant="16" id="mzZ-Ca-gcC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3b1-8X-I6D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Aad-wi-Cv1"/>
+                <constraint firstItem="3b1-8X-I6D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bl6-ya-9Qf"/>
+                <constraint firstAttribute="bottom" secondItem="3b1-8X-I6D" secondAttribute="bottom" id="FT6-MT-9WP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3b1-8X-I6D" secondAttribute="trailing" id="ehc-qx-dch"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblTitle" destination="tEG-xP-KdO" id="Hr1-tC-2bL"/>
+            </connections>
+        </view>
+    </objects>
+</document>

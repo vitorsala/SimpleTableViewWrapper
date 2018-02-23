@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ItemActionType {
+internal enum ItemActionType {
     case selection
     case show
 }

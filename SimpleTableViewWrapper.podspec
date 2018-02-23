@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleTableViewWrapper'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A simple Table View Wrapper to create simple Table Views'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'Reusable', '~> 4.0.0'
 end

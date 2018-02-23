@@ -11,15 +11,24 @@ public typealias STableViewItemAction = ((STableViewItem) -> Void)
 
 open class STableViewItem {
     // MARK: Actions
+    
+    /// The selection closure. This closure will be called when user select the cell containing this item.
     open var onSelection: STableViewItemAction?
+    
+    /// The show closure. This closure will be called when the cell, contaning this item, will be displayed to user's screen.
     open var onShow: STableViewItemAction?
     
     // MARK: Attributes
+    /// The cell's reference that will be used to display this item's properties.
+    ///
+    /// If nil, an 0 height empty cell will be used instead.
     open var cellType: (UITableViewCell & STableViewCellProtocol).Type?
+    
+    /// An Bool marking if this item's cell should render the separator line.
     open var isSeparatorVisible: Bool
     
-    public init<T: UITableViewCell>(cellType: T.Type,
-                                    isSeparatorVisible: Bool = true) where T: STableViewCellProtocol {
+    public init(cellType: (UITableViewCell & STableViewCellProtocol).Type? = nil,
+                isSeparatorVisible: Bool = true) {
 
         self.cellType = cellType
         self.isSeparatorVisible = isSeparatorVisible
