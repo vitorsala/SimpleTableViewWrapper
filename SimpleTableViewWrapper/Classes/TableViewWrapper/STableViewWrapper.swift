@@ -21,7 +21,9 @@ public class STableViewWrapper: NSObject {
     
     public var backgroundColor: UIColor {
         get {
-            return self.tableView?.backgroundColor ?? .clear
+            return self.tableView?.backgroundColor ??
+                self.tableView?.superview?.backgroundColor ??
+                .clear
         }
         set {
             self.tableView?.backgroundColor = newValue
