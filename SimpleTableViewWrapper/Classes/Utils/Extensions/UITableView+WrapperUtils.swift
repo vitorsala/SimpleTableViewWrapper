@@ -17,11 +17,11 @@ extension UITableView {
     }
     
     final func register(headerFooter: (UITableViewHeaderFooterView & STableViewHeaderFooterProtocol).Type) {
-        if let nibLoadable = headerFooter as? STableViewCellNibProtocol.Type {
-            self.register(nibLoadable.nib, forCellReuseIdentifier: nibLoadable.reuseIdentifier)
+        if let nibLoadable = headerFooter as? STableViewHeaderFooterNibProtocol.Type {
+            self.register(nibLoadable.nib, forHeaderFooterViewReuseIdentifier: nibLoadable.reuseIdentifier)
             
         } else {
-            self.register(headerFooter, forCellReuseIdentifier: headerFooter.reuseIdentifier)
+            self.register(headerFooter, forHeaderFooterViewReuseIdentifier: headerFooter.reuseIdentifier)
         }
     }
     

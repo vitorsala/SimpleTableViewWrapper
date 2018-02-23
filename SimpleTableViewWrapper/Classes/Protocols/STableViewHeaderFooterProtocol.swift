@@ -23,4 +23,10 @@ public protocol STableViewHeaderFooterProtocol: Reusable {
                          givenModel sectionModel: STableViewSection)
 }
 
-public protocol STableViewHeaderFooterNibProtocol: STableViewHeaderFooterProtocol, NibLoadable {}
+public extension STableViewHeaderFooterProtocol {
+    func setHeaderFooter(forSection section: Int,
+                         fromTableViewHandler handler: STableViewWrapper,
+                         givenModel sectionModel: STableViewSection) {}
+}
+
+public typealias STableViewHeaderFooterNibProtocol = STableViewHeaderFooterProtocol & NibLoadable
