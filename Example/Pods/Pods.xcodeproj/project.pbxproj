@@ -41,6 +41,7 @@
 		3C6F005E2037081F00D24078 /* STableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F00582037081F00D24078 /* STableViewCellProtocol.swift */; };
 		3C6F005F2037081F00D24078 /* STableViewHeaderFooterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F00592037081F00D24078 /* STableViewHeaderFooterProtocol.swift */; };
 		3C6F006220370DE200D24078 /* UITableView+WrapperUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F006120370DE200D24078 /* UITableView+WrapperUtils.swift */; };
+		3C6F0079203ADFA500D24078 /* EmptyStubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F0077203ADFA500D24078 /* EmptyStubTableViewCell.swift */; };
 		3D1A89FDD6B579BAA92AD398E5C019F9 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958DAC978A9A102CE13A22CEC901B0D0 /* EndWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		3E04D23B2995705A6106D41F3E3E4E33 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC0F538F33D488E14B47C13DBABA39 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		41C783192F7ECD485C8C6384D30CBF11 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73070C979CA9A6F0797AAECB256E4510 /* CwlDarwinDefinitions.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -237,6 +238,7 @@
 		3C6F00582037081F00D24078 /* STableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewCellProtocol.swift; sourceTree = "<group>"; };
 		3C6F00592037081F00D24078 /* STableViewHeaderFooterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewHeaderFooterProtocol.swift; sourceTree = "<group>"; };
 		3C6F006120370DE200D24078 /* UITableView+WrapperUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+WrapperUtils.swift"; sourceTree = "<group>"; };
+		3C6F0077203ADFA500D24078 /* EmptyStubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStubTableViewCell.swift; sourceTree = "<group>"; };
 		3D3E90A311EC45483442C65061873F88 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
 		3EC0D5709FFACAECC8100A7EF637A64D /* Pods-SimpleTableViewWrapper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleTableViewWrapper_Example-umbrella.h"; sourceTree = "<group>"; };
 		3EF60AE5692DCBD265BD71581F760107 /* Pods-SimpleTableViewWrapper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleTableViewWrapper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 		3C6F004A203706B400D24078 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3C6F0075203ADF8100D24078 /* Stubs */,
 				3C6F00502037081E00D24078 /* Utils */,
 				3C6F00522037081E00D24078 /* Models */,
 				3C6F00572037081F00D24078 /* Protocols */,
@@ -508,6 +511,22 @@
 				3C6F006120370DE200D24078 /* UITableView+WrapperUtils.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C6F0075203ADF8100D24078 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F0076203ADF8D00D24078 /* Cell */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		3C6F0076203ADF8D00D24078 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F0077203ADFA500D24078 /* EmptyStubTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3E8BC20ACCF344DE105DDD582C0E4772 /* Pods */ = {
@@ -1141,6 +1160,7 @@
 			files = (
 				3C6F005B2037081F00D24078 /* STableViewItem.swift in Sources */,
 				3C6F005A2037081F00D24078 /* STableViewActionEnum.swift in Sources */,
+				3C6F0079203ADFA500D24078 /* EmptyStubTableViewCell.swift in Sources */,
 				3C6F005D2037081F00D24078 /* STableViewWrapper.swift in Sources */,
 				16B4DBF8E21A7EF18F5CB0E610898901 /* SimpleTableViewWrapper-dummy.m in Sources */,
 				3C6F005E2037081F00D24078 /* STableViewCellProtocol.swift in Sources */,

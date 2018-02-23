@@ -23,7 +23,13 @@ extension ViewController {
     private func sections() -> [STableViewSection] {
         let sections: [STableViewSection] = [
             STableViewSection(items: self.items()),
-            STableViewSection(items: self.items2())
+            STableViewSection(title: "Full Section Example",
+                              items: self.items2(),
+                              headerType: SimpleTableViewHeader.self,
+                              footerType: SimpleTableViewFooter.self),
+            STableViewSection(title: "Show Events Example",
+                              items: self.items3(),
+                              headerType: SimpleTableViewHeader.self)
         ]
         return sections
     }
@@ -51,6 +57,20 @@ extension ViewController {
             return item
         }
         return items
+    }
+    
+    private func items3() -> [STableViewItem] {
+        let item = SimpleItem(name: "Mad Item")
+        item.cellType = SimpleTableViewCellWithNib.self
+        item.onSelection = { [unowned self] selectedItem in
+            guard let it = selectedItem as? SimpleItem else { return }
+            self.showAlert(msg: "Selected \(it.name)")
+        }
+        item.onShow = { [unowned self] sitem in
+            guard let it = sitem as? SimpleItem else { return }
+            self.showAlert(msg: "An wild \(it.name) appeared!")
+        }
+        return [item]
     }
 }
 

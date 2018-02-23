@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1EEB96D172E7F9B63D9DC113 /* Pods_SimpleTableViewWrapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58356C66F05E04BBCE370E /* Pods_SimpleTableViewWrapper_Tests.framework */; };
+		3C40051920403B4F0080D9B5 /* SimpleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40051820403B4F0080D9B5 /* SimpleTableViewHeader.swift */; };
+		3C40051C20403B6A0080D9B5 /* SimpleTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C40051B20403B6A0080D9B5 /* SimpleTableViewHeader.xib */; };
+		3C40051F204042E30080D9B5 /* SimpleTableViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C40051E204042E30080D9B5 /* SimpleTableViewFooter.xib */; };
+		3C400521204042ED0080D9B5 /* SimpleTableViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C400520204042ED0080D9B5 /* SimpleTableViewFooter.swift */; };
 		3C6F006D20371B3E00D24078 /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F006C20371B3E00D24078 /* SimpleCell.swift */; };
 		3C6F007020371B9400D24078 /* SimpleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F006F20371B9400D24078 /* SimpleItem.swift */; };
 		3C6F00732037364900D24078 /* SimpleTableViewCellWithNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F00712037364900D24078 /* SimpleTableViewCellWithNib.swift */; };
@@ -33,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		17532ABB870AA2CD827537AC /* Pods-SimpleTableViewWrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTableViewWrapper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTableViewWrapper_Example/Pods-SimpleTableViewWrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C40051820403B4F0080D9B5 /* SimpleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewHeader.swift; sourceTree = "<group>"; };
+		3C40051B20403B6A0080D9B5 /* SimpleTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewHeader.xib; sourceTree = "<group>"; };
+		3C40051E204042E30080D9B5 /* SimpleTableViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewFooter.xib; sourceTree = "<group>"; };
+		3C400520204042ED0080D9B5 /* SimpleTableViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewFooter.swift; sourceTree = "<group>"; };
 		3C6F006C20371B3E00D24078 /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
 		3C6F006F20371B9400D24078 /* SimpleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleItem.swift; sourceTree = "<group>"; };
 		3C6F00712037364900D24078 /* SimpleTableViewCellWithNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCellWithNib.swift; sourceTree = "<group>"; };
@@ -77,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C40051A20403B580080D9B5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3C40051820403B4F0080D9B5 /* SimpleTableViewHeader.swift */,
+				3C40051B20403B6A0080D9B5 /* SimpleTableViewHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		3C40051D204042C60080D9B5 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				3C400520204042ED0080D9B5 /* SimpleTableViewFooter.swift */,
+				3C40051E204042E30080D9B5 /* SimpleTableViewFooter.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
 		3C6F006820371AFB00D24078 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +122,8 @@
 		3C6F006A20371B2B00D24078 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C40051A20403B580080D9B5 /* Header */,
+				3C40051D204042C60080D9B5 /* Footer */,
 				3C6F006B20371B3000D24078 /* Cells */,
 			);
 			path = Views;
@@ -302,6 +330,8 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				3C6F00742037364900D24078 /* SimpleTableViewCellWithNib.xib in Resources */,
+				3C40051F204042E30080D9B5 /* SimpleTableViewFooter.xib in Resources */,
+				3C40051C20403B6A0080D9B5 /* SimpleTableViewHeader.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -431,7 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6F007020371B9400D24078 /* SimpleItem.swift in Sources */,
+				3C400521204042ED0080D9B5 /* SimpleTableViewFooter.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3C40051920403B4F0080D9B5 /* SimpleTableViewHeader.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				3C6F00732037364900D24078 /* SimpleTableViewCellWithNib.swift in Sources */,
 				3C6F006D20371B3E00D24078 /* SimpleCell.swift in Sources */,

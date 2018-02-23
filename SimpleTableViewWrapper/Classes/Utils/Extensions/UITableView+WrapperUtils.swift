@@ -17,19 +17,17 @@ extension UITableView {
     }
     
     final func register(headerFooter: (UITableViewHeaderFooterView & STableViewHeaderFooterProtocol).Type) {
-        if let nibLoadable = headerFooter as? STableViewCellNibProtocol.Type {
-            self.register(nibLoadable.nib, forCellReuseIdentifier: nibLoadable.reuseIdentifier)
+        if let nibLoadable = headerFooter as? STableViewHeaderFooterNibProtocol.Type {
+            self.register(nibLoadable.nib, forHeaderFooterViewReuseIdentifier: nibLoadable.reuseIdentifier)
             
         } else {
-            self.register(headerFooter, forCellReuseIdentifier: headerFooter.reuseIdentifier)
+            self.register(headerFooter, forHeaderFooterViewReuseIdentifier: headerFooter.reuseIdentifier)
         }
     }
     
     final func dequeueReusableCell(for item: STableViewItem, at indexPath: IndexPath) -> (UITableViewCell & STableViewCellProtocol) {
         
-        guard let cellType = item.cellType else {
-            fatalError("Item don't contain any cell")
-        }
+        let cellType = item.cellType ?? EmptyStubTableViewCell.self
         guard let cell = self.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath) as? (UITableViewCell & STableViewCellProtocol) else {
             
             fatalError("Cell must conform to either STableViewCellProtocol or STableViewCellNibProtocol")
